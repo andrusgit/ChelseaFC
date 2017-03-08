@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"> 
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" 
-		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<head>
+		<meta charset="utf-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" 
+			href="css/bootstrap.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" 
+			type="text/css">
+		<title>Jooksupoiss</title>
 	</head>
 	<body>
-	
-		<!---Paddinguga, container-fluid'iga padding puudub -->
+	<!-- Navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
 		<div class="container">
-		
-			<!-- Space around the text & enlarge text inside & underline -->
-			<div class="page-header">
-			<h1>Jooksupoiss</h1>
+			<div class="navbar-header">
+				<!-- VÃ¤iksel ekraanil kaovad navbarilt nupud Ã¤ra ja tuleb nupp asemele -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+					<!-- Hides information from screen readers -->
+					<span class="sr-only"></span>
+					<!-- Joonistab nupule 3 triipu #aesthetics -->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			<a class="navbar-brand" href="#">Jooksupoiss</a>
 			</div>
-			<!-- Enlarge fonts & put everything around a gray box by default, rounded corners-->
-			<div class="jumbotron">
-				<p>Siia tuleb tekst. Siia tuleb tekst. Siia tuleb tekst. Siia tuleb tekst. 
-				Siia tuleb tekst. Siia tuleb tekst. Siia tuleb tekst. Siia tuleb tekst. 
-				Siia tuleb tekst. Siia tuleb tekst. Siia tuleb tekst. </p>
-			</div>
-			
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="">Pealeht <span class="sr-only">(current)</span></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>Eesti lipp </li>
+					<li>Suurbritannia lipp </li>
+					<li>Soome lipp</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
 		</div>
-		
-		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<!--Kui siin midagi putsi läheb siis <div class="clearfix visible-lg/sm"></div> -->
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<a href="#" class="btn btn-default" role="button">KKK</a>
-						<a href="#" class="btn btn-default" role="button">Firmast</a>
-						<a href="#" class="btn btn-default" role="button">Kontakt</a>
-					</div>
-				</div>
+    </nav>
+	
+	<footer class="footer-distributed">
+			<div class="footer-right">
+				<a href="https://facebook.com/leagueoflegends"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/imaqtpielol"><i class="fa fa-twitter"></i></a>
+			</div>
+			<div class="footer-left">
+				<p class="footer-links">
+					<a href="#">Meist</a>
+					<a href="#">KKK</a>
+					<a href="#">Kontakt</a>
+				</p>
+				<p>Vahvad sellid &copy; 2017</p>
 			</div>
 		</footer>
 	
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!-- Latest compiled JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Lahedad ikoonid FB & Twitteri jaoks -->
+		<script src="https://use.fontawesome.com/359d9f550f.js"></script>
 	</body>
 </html> 
-
-<!-- 
-nuppude grupid, näiteks kui login buttonit vajutada siis tuleb uus menüü kus seda kasutada
-<div class="btn-group btn-group-lg" role="group">
-	siia tulevad nupud
-</div>
--->
