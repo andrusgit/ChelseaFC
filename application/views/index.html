@@ -2,13 +2,14 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"> 
-		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pealeht</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+			crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" 
 			href="css/bootstrap.css">
-		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" 
-			type="text/css">
-		<title>Jooksupoiss</title>
 	</head>
 	<body>
 	<!-- Navbar -->
@@ -24,21 +25,36 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-			<a class="navbar-brand" href="#">Jooksupoiss</a>
+			<a href="#" class="navbar-brand" href="#">Jooksupoiss</a>
 			</div>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="">Pealeht <span class="sr-only">(current)</span></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li>Eesti lipp </li>
-					<li>Suurbritannia lipp </li>
-					<li>Soome lipp</li>
+					<!-- Siia võiksid tulla nende riikide lipud mis keeles me teeme, nt Suurbritannia, Eesti, Soome vms-->
+					<li><a href="">Logi sisse <span class="sr-only">(current)</span></a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div>
     </nav>
 	
+	<!-- Main -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+				<div class="span6"><button id="lookatadsButton" class="btn btn-success btn-lg">Vaata kuulutusi</button></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+				<div class="span6"><button id="lookatadsButton" class="btn btn-info btn-lg">Lisa kuulutus</button></div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Footer -->	
 	<footer class="footer-distributed">
 			<div class="footer-right">
 				<a href="https://facebook.com/leagueoflegends"><i class="fa fa-facebook"></i></a>
@@ -53,12 +69,15 @@
 				<p>Vahvad sellid &copy; 2017</p>
 			</div>
 		</footer>
-	
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<!-- Latest compiled JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Lahedad ikoonid FB & Twitteri jaoks -->
-		<script src="https://use.fontawesome.com/359d9f550f.js"></script>
+		
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- jQuery fallback -->
+	<script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<!-- JavaScript local fallback -->
+	<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="js/bootstrap.min.js"><\/script>')}</script>
+
 	</body>
 </html> 
