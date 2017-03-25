@@ -1,0 +1,26 @@
+[12-Mar-2017 21:35:52 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'sess_match_ip' (T_STRING) in /webpages/chelseafccsut/public_html/application/config/config.php on line 384
+[12-Mar-2017 21:35:58 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'sess_match_ip' (T_STRING) in /webpages/chelseafccsut/public_html/application/config/config.php on line 384
+[12-Mar-2017 21:36:14 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'sess_match_ip' (T_STRING) in /webpages/chelseafccsut/public_html/application/config/config.php on line 384
+[25-Mar-2017 00:06:13 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 45
+[25-Mar-2017 16:22:34 Europe/Tallinn] PHP Fatal error:  Call to undefined function lang() in /webpages/chelseafccsut/public_html/application/controllers/Welcome.php on line 27
+[25-Mar-2017 17:18:24 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 61
+[25-Mar-2017 18:26:46 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 19
+[25-Mar-2017 18:27:34 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 19
+[25-Mar-2017 18:27:43 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 19
+[25-Mar-2017 18:29:02 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 19
+[25-Mar-2017 18:29:03 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 19
+[25-Mar-2017 18:29:03 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 19
+[25-Mar-2017 18:29:03 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 19
+[25-Mar-2017 18:29:03 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 19
+[25-Mar-2017 18:29:03 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 19
+[25-Mar-2017 18:29:04 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 19
+[25-Mar-2017 23:09:22 Europe/Tallinn] PHP Fatal error:  Call to a member function getRows() on null in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 59
+[25-Mar-2017 23:09:48 Europe/Tallinn] PHP Fatal error:  Call to a member function getRows() on null in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 59
+[25-Mar-2017 23:11:40 Europe/Tallinn] PHP Fatal error:  Call to a member function getRows() on null in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 59
+[25-Mar-2017 23:11:52 Europe/Tallinn] PHP Fatal error:  Call to a member function getRows() on null in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 59
+[25-Mar-2017 23:12:13 Europe/Tallinn] PHP Fatal error:  Call to a member function getRows() on null in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 59
+[25-Mar-2017 23:18:11 Europe/Tallinn] PHP Fatal error:  Call to a member function getRows() on null in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 129
+[25-Mar-2017 23:21:59 Europe/Tallinn] PHP Parse error:  syntax error, unexpected ')' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 13
+[25-Mar-2017 23:23:18 Europe/Tallinn] PHP Parse error:  syntax error, unexpected ')' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 13
+[25-Mar-2017 23:23:57 Europe/Tallinn] PHP Fatal error:  Call to a member function result() on array in /webpages/chelseafccsut/public_html/application/views/offers.php on line 14
+[25-Mar-2017 23:24:13 Europe/Tallinn] PHP Fatal error:  Call to a member function result() on array in /webpages/chelseafccsut/public_html/application/views/offers.php on line 14

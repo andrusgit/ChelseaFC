@@ -12,10 +12,6 @@ html {
 body {
   margin: 0;
 }
-#jooksupoissLogo{
-	height:100px;
-	width:100px;
-}
 
 .footer-distributed{
 	background-color: #292c2f;
@@ -4354,6 +4350,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
+  min-height:50px;
   height: 50px;
   padding: 15px 15px;
   font-size: 18px;

@@ -20,6 +20,55 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		if(!isset($_SESSION)) { 
+			session_start();
+		}
+		
+		//header
+		$this->load->view('head');
+		//main content
+		$this->load->view('index');
+		//footer
+		$this->load->view('footer');
+		
 	}
+	
+	public function kontakt() 
+	{
+		if(!isset($_SESSION)) { 
+			session_start();
+		}
+		
+		$this->load->view('head');	
+		$this->load->view('contact');
+		$this->load->view('footer');
+		
+	}
+	
+	public function login() 
+	{
+		if(!isset($_SESSION)) { 
+			session_start();
+		}
+		
+		$this->load->view('head');	
+		$this->load->view('login');
+		$this->load->view('footer');
+		
+	}
+	
+	public function register() 
+	{
+		if(!isset($_SESSION)) { 
+			session_start();
+		}
+		
+		$this->load->view('head');	
+		$this->load->view('registration');
+		$this->load->view('footer');
+		
+	}
+	
+	
+	
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+   
+    <body>
+
+        <div class="container">
+            <h2>Kuulutused</h2>
+            
+            <form action=""> 
+                <select name="customers" onchange="showCustomer(this.value)">
+                    <option value="">Pakun/Otsin</option>
+                    <option value="Pakun">Pakun</option>
+                    <option value="Otsin ">Otsin</option>
+                </select>
+            </form>
+            <br>
+            <div id="txtHint">Customer info will be listed here...</div>
+            <script src="js/pakun_otsin.js"></script>
+            
+            <!--         
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Kuulutuse nimi</th>
+                  <th>Asukoht</th>
+                  <th>Kestus</th>
+                  <th>Kuupäev</th>
+                  <th>Töötasu</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tee mulle omletti</td>
+                  <td>Tallinn</td>
+                  <td>8h</td>
+                  <td>25.03.2017</td>
+                  <td>6.50€/h</td>
+                </tr>
+              </tbody>
+            </table>
+            -->
+            
+            </div>
+        
+    </body>
+</html>
