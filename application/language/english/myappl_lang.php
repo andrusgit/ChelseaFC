@@ -12,7 +12,7 @@ $lang['SITE_NAME'] = 'Jooksupoiss';
 $lang['MENU_HOME'] = 'Home';
 $lang['MENU_SIGN_UP'] = 'Sign Up';
 $lang['MENU_LOG_IN'] = 'Log In';
-$lang['FOOTER_ABOUT_US'] = 'About Us';
+$lang['FOOTER_ABOUT_US'] = 'About';
 $lang['FOOTER_FAQ'] = 'FAQ';
 $lang['FOOTER_CONTACT'] = 'Contact';
 
