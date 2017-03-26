@@ -4,14 +4,14 @@
 				<table class="table table-hover table-responsive"> 
 					<thead>
 						<tr>
-							<th class="text-center col-lg-1"><b>Id</b></th>  
-							<th class="text-center col-lg-2"><b><?php echo lang("OFFERS_TABLE_TITLE"); ?></b></th>
-							<th class="text-center col-lg-3"><b><?php echo lang("OFFERS_TABLE_DESCRIPTION"); ?></b></th>
-							<th class="text-center col-lg-1"><b><?php echo lang("OFFERS_TABLE_LOCATION"); ?></b></th>
-							<th class="text-center col-lg-1"><b><?php echo lang("OFFERS_TABLE_PAY"); ?> (€/h)</b></th>
-							<th class="text-center col-lg-2"><b><?php echo lang("OFFERS_TABLE_BEGIN"); ?></b></th>	
-							<th class="text-center col-lg-2"><b><?php echo lang("OFFERS_TABLE_END"); ?></b></th>
-<!--							<td>Lisas</td>-->
+							<th class="text-center col-lg-1"><em>Id</em></th>  
+							<th class="text-center col-lg-1"><em><?php echo lang("OFFERS_TABLE_TITLE"); ?></em></th>
+							<th class="text-center col-lg-3"><em><?php echo lang("OFFERS_TABLE_DESCRIPTION"); ?></em></th>
+							<th class="text-center col-lg-1"><em><?php echo lang("OFFERS_TABLE_LOCATION"); ?></em></th>
+							<th class="text-center col-lg-1"><em><?php echo lang("OFFERS_TABLE_PAY"); ?> (€/h)</em></th>
+							<th class="text-center col-lg-2"><em><?php echo lang("OFFERS_TABLE_BEGIN"); ?></em></th>	
+							<th class="text-center col-lg-2"><em><?php echo lang("OFFERS_TABLE_END"); ?></em></th>
+							<th class="text-center col-lg-1"><em>Lisas</em></th>
 						</tr>
 					</thead>
 				  <tbody>   
@@ -26,7 +26,7 @@
 						<td class="text-center"><?php echo $row->Hourprice;?></td>  
 						<td class="text-center"><?php echo $row->Start;?></td>  
 						<td class="text-center"><?php echo $row->Enddatetime;?></td>  
-						<!--<td><?php echo $row->name;?></td>-->  
+						<td class="text-center"><?php echo $row->Added;?></td> 
 						</tr>  
 					 <?php }  
 					 ?>  
