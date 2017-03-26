@@ -8,33 +8,20 @@ class Offers extends CI_Controller {
 		if(!isset($_SESSION)) { 
 			session_start();
 		}
-
+		
+		$title['title'] = lang('OFFERS_PAGE_TITLE');
 		$this->load->model('Offer');  
         //load the method of model  
         $data['h']=$this->Offer->getOffers();
-        //return the data in view  
-        $this->load->view('head');	
+		if($this->session->userdata('isUserLoggedIn')){
+			$this->load->view('headloggedin', $title);	
+		}else{
+			$this->load->view('head', $title);	
+		}
 		$this->load->view('offers', $data);  
 		$this->load->view('footer');
    
 	
-	}
-
-	public function showAmountOfOffersByUser()
-	{
-		
-		if(!isset($_SESSION)) { 
-			session_start();
-		}
-	
-		$this->load->model('Offer');  
-        //load the method of model  
-        $data['h']=$this->Offer->getOffersAmountByUserId("6");  
-        //return the data in view  	
-		$this->load->view('headloggedin');	
-		$this->load->view('account', $data);  
-		$this->load->view('footer');		
-		
 	}
 	  
 }

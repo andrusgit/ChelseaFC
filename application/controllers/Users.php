@@ -1,7 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-/**
- * User Management class created by CodexWorld
- */
+
 class Users extends CI_Controller {
     
     function __construct() {
@@ -17,10 +15,10 @@ class Users extends CI_Controller {
         $data = array();
         if($this->session->userdata('isUserLoggedIn')){
             $data['user'] = $this->user->getRows(array('id'=>$this->session->userdata('userId')));
-			
+			$currentUserId = $data['user']['id'];
 			$this->load->model('Offer');  
 			//load the method of model  
-			$data['offers']=$this->Offer->getOffersAmountByUserId("6"); 
+			$data['offers']=$this->Offer->getOffersAmountByUserId($currentUserId); 
 			
 			$this->load->view('headloggedin');
             $this->load->view('users/account', $data);
@@ -40,6 +38,10 @@ class Users extends CI_Controller {
 
 		$title['title'] = lang('LOG_IN_FORM_TITLE');
 		
+		if($this->session->userdata('isUserLoggedIn')){
+			redirect('users/account');    
+		}
+		
         $data = array();
         if($this->session->userdata('success_msg')){
             $data['success_msg'] = $this->session->userdata('success_msg');
@@ -56,7 +58,7 @@ class Users extends CI_Controller {
                 $con['returnType'] = 'single';
                 $con['conditions'] = array(
                     'email'=>$this->input->post('email'),
-                    'password' => md5($this->input->post('password')),
+                    'password' => sha1($this->input->post('password')),
                     'status' => '1'
                 );
                 $checkLogin = $this->user->getRows($con);
@@ -79,7 +81,6 @@ class Users extends CI_Controller {
      * User registration
      */
     public function registration(){
-
 	
 		$title['title'] = lang('SIGN_UP_FORM_TITLE');
         $data = array();
@@ -93,7 +94,7 @@ class Users extends CI_Controller {
             $userData = array(
                 'name' => strip_tags($this->input->post('name')),
                 'email' => strip_tags($this->input->post('email')),
-                'password' => md5($this->input->post('password')),
+                'password' => sha1($this->input->post('password')),
                 'gender' => $this->input->post('gender'),
                 'phone' => strip_tags($this->input->post('phone'))
             );
@@ -101,7 +102,7 @@ class Users extends CI_Controller {
             if($this->form_validation->run() == true){
                 $insert = $this->user->insert($userData);
                 if($insert){
-                    $this->session->set_userdata('success_msg', 'Your registration was successfully. Please login to your account.');
+                    $this->session->set_userdata('success_msg', 'Your registration was successful. Please login to your account.');
                     redirect('users/login');
                 }else{
                     $data['error_msg'] = 'Some problems occured, please try again.';

@@ -5,9 +5,9 @@
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th><?php echo lang("SIGN_UP_FORM_NAME"); ?></th>
-                  <th><?php echo lang("SIGN_UP_FORM_PHONE"); ?></th>
-                  <th><?php echo lang("SIGN_UP_FORM_EMAIL"); ?></th>
+                  <th>Nimi</th>
+                  <th>Telefon</th>
+                  <th>Email</th>
                 </tr>
               </thead>
               <tbody>
@@ -22,7 +22,7 @@
                   <td>toomasveromann@gmail.com</td>
                 </tr>
                 <tr>
-                  <td>Ako Tõnissoo</td>
+                  <td>Ako T천nissoo</td>
                   <td>53533329</td>
                   <td>ako.tonissoo@gmail.com</td>
                 </tr>
@@ -33,11 +33,7 @@
             <script src="/js/googleMap.js"></script>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb38Ul4HJ-GAKgKCWoo492ASn6_A-lRX4&callback=myMap"></script>
             
-            <form action="feedback.php" method="POST">
-            	            	
-                <br>
-		<h3><?php echo lang("CONTACT_PAGE_FEEDBACK_TITLE"); ?></h3><textarea name="message" rows="6" cols="100"></textarea><br />
-		<input type="submit" value="<?php echo lang("CONTACT_PAGE_FEEDBACK_SEND"); ?>" onclick="showXMLfeedback()"><input type="reset" value="<?php echo lang("CONTACT_PAGE_FEEDBACK_RESET"); ?>">
-	     </form>
+
+
         </div>
         

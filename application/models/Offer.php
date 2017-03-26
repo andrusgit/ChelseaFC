@@ -18,15 +18,16 @@ class Offer extends CI_Model{
 	public function getOffersAmountByUserId($userId){
 		$userId = (int)$userId;
 		
-		$query = $this->db->query("SELECT COUNT(*) as Count FROM view_JobOffersWithUser Where UserId=".$userId);
-		$final = "";
+		/*$query = $this->db->query("SELECT COUNT(*) as Count FROM view_JobOffersWithUser Where UserId=".$userId);
+		$data = mysqli_fetch_assoc($query);
+		return $data['Count'];*/
 		
-		foreach ($query->result() as $row)  
-		{
-			$final . $row;
-		}
-		
-		return $query;
+		$con=mysqli_connect("localhost","chelseafccsut_toomastoomas","D,,}?]m_Z[R,","chelseafccsut_Users");
+		$result = mysqli_query($con, "SELECT COUNT(*) as Count FROM view_JobOffersWithUser Where UserId=".$userId);
+		$row = mysqli_fetch_assoc($result);
+		$count = $row['Count'];
+	
+		return $count;
 	
 	}
 	

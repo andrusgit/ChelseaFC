@@ -34,3 +34,24 @@
 [26-Mar-2017 15:30:12 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '}' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 27
 [26-Mar-2017 15:32:35 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '}' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 27
 [26-Mar-2017 15:32:41 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '}' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 27
+[26-Mar-2017 15:47:28 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 15:49:55 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 15:50:04 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 16:04:04 Europe/Tallinn] PHP Fatal error:  Call to undefined function msql_fetch_assoc() in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 23
+[26-Mar-2017 16:07:27 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 16:07:31 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 16:07:38 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 16:07:52 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 16:10:17 Europe/Tallinn] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::fetch_assoc() in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 22
+[26-Mar-2017 16:17:41 Europe/Tallinn] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::fetch_row() in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 26
+[26-Mar-2017 16:24:32 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '"' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 25
+[26-Mar-2017 16:24:50 Europe/Tallinn] PHP Deprecated:  mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 25
+[26-Mar-2017 16:24:50 Europe/Tallinn] PHP Deprecated:  mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 25
+[26-Mar-2017 16:25:13 Europe/Tallinn] PHP Deprecated:  mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 25
+[26-Mar-2017 16:25:13 Europe/Tallinn] PHP Deprecated:  mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 25
+[26-Mar-2017 17:57:42 Europe/Tallinn] PHP Fatal error:  Cannot use [] for reading in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 18
+[26-Mar-2017 18:38:15 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '{' in /webpages/chelseafccsut/public_html/application/views/users/login.php on line 34
+[26-Mar-2017 19:48:48 Europe/Tallinn] PHP Fatal error:  Call to a member function getOffers() on null in /webpages/chelseafccsut/public_html/application/controllers/Offers.php on line 15
+[26-Mar-2017 19:48:53 Europe/Tallinn] PHP Fatal error:  Call to a member function getOffers() on null in /webpages/chelseafccsut/public_html/application/controllers/Offers.php on line 15
+[26-Mar-2017 19:49:00 Europe/Tallinn] PHP Fatal error:  Call to a member function getOffers() on null in /webpages/chelseafccsut/public_html/application/controllers/Offers.php on line 15
+[26-Mar-2017 20:24:43 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /webpages/chelseafccsut/public_html/application/controllers/User_authentication.php on line 56

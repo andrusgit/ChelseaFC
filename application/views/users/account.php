@@ -6,6 +6,6 @@
         <p><b>Email: </b><?php echo $user['email']; ?></p>
         <p><b>Telefon: </b><?php echo $user['phone']; ?></p>
         <p><b>Sugu: </b><?php echo $user['gender']; ?></p>
-		<p><b>Lisatud kuulutusi: </b><?php echo $offers['Count']; ?></p>
+		<p><b>Lisatud kuulutusi: </b><?php echo $offers; ?></p>
     </div>
 </div>

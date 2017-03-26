@@ -26,9 +26,11 @@ class Welcome extends CI_Controller {
 		
 		$title['title'] = lang('MAIN_PAGE_TITLE');
 		
-		//header
-		$this->load->view('head', $title);
-		//main content
+		if($this->session->userdata('isUserLoggedIn')){
+			$this->load->view('headloggedin', $title);	
+		}else{
+			$this->load->view('head', $title);	
+		}
 		$this->load->view('index');
 		//footer
 		$this->load->view('footer');
@@ -42,37 +44,12 @@ class Welcome extends CI_Controller {
 		}
 		
 		$title['title'] = lang('CONTACT_PAGE_TITLE');
-		
-		$this->load->view('head', $title);	
+		if($this->session->userdata('isUserLoggedIn')){
+			$this->load->view('headloggedin', $title);	
+		}else{
+			$this->load->view('head', $title);	
+		}
 		$this->load->view('contact');
-		$this->load->view('footer');
-		
-	}
-	
-	public function login() 
-	{
-		if(!isset($_SESSION)) { 
-			session_start();
-		}
-		
-		$title['title'] = lang('LOG_IN_FORM_TITLE');
-		
-		$this->load->view('head', $title);	
-		$this->load->view('login');
-		$this->load->view('footer');
-		
-	}
-	
-	public function register() 
-	{
-		if(!isset($_SESSION)) { 
-			session_start();
-		}
-		
-		$title['title'] = lang('SIGN_UP_FORM_TITLE');
-		
-		$this->load->view('head', $title);	
-		$this->load->view('registration');
 		$this->load->view('footer');
 		
 	}
