@@ -55,6 +55,19 @@ $lang['OFFERS_TABLE_PAY'] = 'Payment';
 $lang['OFFERS_TABLE_BEGIN'] = 'Begin date';
 $lang['OFFERS_TABLE_END'] = 'End date';
 
+//LOGGED IN NAVIGATION
+$lang['LOGGED_IN_MENU_USER'] = 'User';
+$lang['LOGGED_IN_MENU_LOG_OUT'] = 'Log out';
+
+//ACCOUNT
+$lang['ACCOUNT_TITLE'] = 'Account';
+$lang['ACCOUNT_WELCOME'] = 'Welcome';
+$lang['ACCOUNT_NAME'] = 'Name';
+$lang['ACCOUNT_EMAIL'] = 'Email';
+$lang['ACCOUNT_PHONE'] = 'Phone';
+$lang['ACCOUNT_SEX'] = 'Sex';
+$lang['ACCOUNT_ADS'] = 'Amount of ads added';
+
 //HELP
 $lang['MAIN_SEARCH_HELP'] = 'For when you want to search for services';
 $lang['MAIN_ADD_HELP'] = 'For when you want to add an ad for a service';

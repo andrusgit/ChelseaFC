@@ -55,6 +55,19 @@ $lang['OFFERS_TABLE_PAY'] = 'Tunnitasu';
 $lang['OFFERS_TABLE_BEGIN'] = 'Algus';
 $lang['OFFERS_TABLE_END'] = 'Lõpp';
 
+//LOGGED IN NAVIGATION
+$lang['LOGGED_IN_MENU_USER'] = 'Kasutaja';
+$lang['LOGGED_IN_MENU_LOG_OUT'] = 'Logi välja';
+
+//ACCOUNT
+$lang['ACCOUNT_TITLE'] = 'Konto';
+$lang['ACCOUNT_WELCOME'] = 'Tere tulemast';
+$lang['ACCOUNT_NAME'] = 'Nimi';
+$lang['ACCOUNT_EMAIL'] = 'Email';
+$lang['ACCOUNT_PHONE'] = 'Telefon';
+$lang['ACCOUNT_SEX'] = 'Sugu';
+$lang['ACCOUNT_ADS'] = 'Lisatud kuulutusi';
+
 //HELP
 $lang['MAIN_SEARCH_HELP'] = 'Kui soovid olemasolevaid kuulutusi sirvida';
 $lang['MAIN_ADD_HELP'] = 'Kui soovid uut kuulutust lisada';
