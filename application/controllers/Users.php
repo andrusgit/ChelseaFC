@@ -17,10 +17,15 @@ class Users extends CI_Controller {
         $data = array();
         if($this->session->userdata('isUserLoggedIn')){
             $data['user'] = $this->user->getRows(array('id'=>$this->session->userdata('userId')));
-            //load the 
-			$this->load->view('head');
+			
+			$this->load->model('Offer');  
+			//load the method of model  
+			$data['offers']=$this->Offer->getOffersAmountByUserId("6"); 
+			
+			$this->load->view('headloggedin');
             $this->load->view('users/account', $data);
 			$this->load->view('footer');
+
 		}else{
 			$this->load->view('head');
 			$this->load->view('unauth');
@@ -32,6 +37,9 @@ class Users extends CI_Controller {
      * User login
      */
     public function login(){
+
+		$title['title'] = lang('LOG_IN_FORM_TITLE');
+		
         $data = array();
         if($this->session->userdata('success_msg')){
             $data['success_msg'] = $this->session->userdata('success_msg');
@@ -62,7 +70,7 @@ class Users extends CI_Controller {
             }
         }
         //load the view
-		$this->load->view('head');
+		$this->load->view('head', $title);
         $this->load->view('users/login', $data);
 		$this->load->view('footer'); 
  }
@@ -71,6 +79,9 @@ class Users extends CI_Controller {
      * User registration
      */
     public function registration(){
+
+	
+		$title['title'] = lang('SIGN_UP_FORM_TITLE');
         $data = array();
         $userData = array();
         if($this->input->post('regisSubmit')){
@@ -99,7 +110,7 @@ class Users extends CI_Controller {
         }
         $data['user'] = $userData;
         //load the view
-		$this->load->view('head'); 
+		$this->load->view('head', $title);
         $this->load->view('users/registration', $data);
 		$this->load->view('footer'); 
     }

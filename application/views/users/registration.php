@@ -2,10 +2,17 @@
 <html lang="en">  
 <head>
 <link href="<?php echo base_url(); ?>assets/css/style.css" rel='stylesheet' type='text/css' />
+<?php 
+	if(isset($title)){
+		echo "<title>" . $title . "</title>";
+	} else {
+		echo "<title>Tiitel puudub</title>";
+	}
+?>
 </head>
 <body>
 <div class="container">
-    <h2>Registreerimine</h2>
+    <h2><?php echo lang("SIGN_UP_FORM_TITLE"); ?></h2>
     <form action="" method="post">
         <div class="form-group">
             <input type="text" class="form-control" name="name" placeholder="Nimi" required="" value="<?php echo !empty($user['name'])?$user['name']:''; ?>">
@@ -39,13 +46,13 @@
             <div class="radio">
                 <label>
                 <input type="radio" name="gender" value="Male" <?php echo $mcheck; ?>>
-                Mees
+                <?php echo lang("SIGN_UP_FORM_SEX_MALE"); ?>
                 </label>
             </div>
             <div class="radio">
                 <label>
                   <input type="radio" name="gender" value="Female" <?php echo $fcheck; ?>>
-                  Naine
+                  <?php echo lang("SIGN_UP_FORM_SEX_FEMALE"); ?>
                 </label>
             </div>
         </div>
@@ -53,7 +60,7 @@
             <input type="submit" name="regisSubmit" class="btn btn-primary" value="Registreeru"/>
         </div>
     </form>
-    <p class="footInfo">Kasutaja juba olemas? <a href="<?php echo base_url(); ?>users/login">Logi sisse</a></p>              
+    <p class="footInfo"><?php echo lang("SIGN_UP_FORM_IF_USER_QUESTION"); ?> <a href="<?php echo base_url(); ?>users/login"><?php echo lang("MENU_LOG_IN"); ?></a></p>              
 </div>
 </body>
 </html>

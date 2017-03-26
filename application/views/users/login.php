@@ -2,10 +2,17 @@
 <html lang="en">  
 <head>
 <link href="<?php echo base_url(); ?>assets/css/style.css" rel='stylesheet' type='text/css' />
+<?php 
+	if(isset($title)){
+		echo "<title>" . $title . "</title>";
+	} else {
+		echo "<title>Tiitel puudub</title>";
+	}
+?>
 </head>
 <body>
 <div class="container">
-    <h2>Sisselogimine</h2>
+    <h2><?php echo lang("LOG_IN_FORM_TITLE"); ?></h2>
     <?php
     if(!empty($success_msg)){
         echo '<p class="statusMsg">'.$success_msg.'</p>';
@@ -26,7 +33,7 @@
             <input type="submit" name="loginSubmit" class="btn btn-primary" value="Sisene"/>
         </div>
     </form>
-    <p class="footInfo">Pole veel kasutajat? <a href="<?php echo base_url(); ?>users/registration">Registreeri siin. </a></p>
+    <p class="footInfo"><?php echo lang("LOG_IN_FORM_NOT_USER_QUESTION"); ?> <a href="<?php echo base_url(); ?>users/registration"><?php echo lang("MENU_SIGN_UP"); ?></a></p>
 </div>
 </body>
 </html>

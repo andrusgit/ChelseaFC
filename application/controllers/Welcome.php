@@ -24,8 +24,10 @@ class Welcome extends CI_Controller {
 			session_start();
 		}
 		
+		$title['title'] = lang('MAIN_PAGE_TITLE');
+		
 		//header
-		$this->load->view('head');
+		$this->load->view('head', $title);
 		//main content
 		$this->load->view('index');
 		//footer
@@ -39,7 +41,9 @@ class Welcome extends CI_Controller {
 			session_start();
 		}
 		
-		$this->load->view('head');	
+		$title['title'] = lang('CONTACT_PAGE_TITLE');
+		
+		$this->load->view('head', $title);	
 		$this->load->view('contact');
 		$this->load->view('footer');
 		
@@ -51,7 +55,9 @@ class Welcome extends CI_Controller {
 			session_start();
 		}
 		
-		$this->load->view('head');	
+		$title['title'] = lang('LOG_IN_FORM_TITLE');
+		
+		$this->load->view('head', $title);	
 		$this->load->view('login');
 		$this->load->view('footer');
 		
@@ -63,11 +69,25 @@ class Welcome extends CI_Controller {
 			session_start();
 		}
 		
-		$this->load->view('head');	
+		$title['title'] = lang('SIGN_UP_FORM_TITLE');
+		
+		$this->load->view('head', $title);	
 		$this->load->view('registration');
 		$this->load->view('footer');
 		
 	}
+	
+	//Õppejõu järgi
+	function vahetaKeelt($language = "") {
+		if(!isset($_SESSION)) { 
+			session_start();
+		}
+		if($language == "")
+			$language = "estonian";
+		
+        $this->session->set_userdata('site_lang', $language);
+		redirect(base_url());
+    }
 	
 	
 	

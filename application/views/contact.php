@@ -1,6 +1,6 @@
 		<!-- Contact & map etc-->
         <div class="container">
-            <h2>Kontakt(ei ropenda)</h2>
+            <h2><?php echo lang("CONTACT_PAGE_TITLE"); ?></h2>
                        
             <table class="table table-striped">
               <thead>
@@ -13,8 +13,8 @@
               <tbody>
                 <tr>
                   <td>Andrus Lall</td>
-                  <td>Andruse telefon</td>
-                  <td>Andruse e-mail</td>
+                  <td>5581148</td>
+                  <td>andruslall@outlook.com</td>
                 </tr>
                 <tr>
                   <td>Toomas Veromann</td>

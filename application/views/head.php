@@ -8,7 +8,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Pealeht</title>
+		<?php 
+		if(isset($title)){
+			echo "<title>" . $title . "</title>";
+		} else {
+			echo "<title>Tiitel puudub</title>";
+		}
+		?>
 				
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -44,11 +50,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<ul class="nav navbar-nav">
 					<!-- <li><a href="<?php echo base_url(); ?>" class="navbar-brand"><img class="img" alt="Jooksupoiss_logo" src="<?php echo base_url(); ?>/images/logo1-1.jpg"/></a></li> -->
 					<li><a href="<?php echo base_url(); ?>" class="navbar-brand">Jooksupoiss</a></li>
-					<li class="all"><a href="<?php echo base_url(); ?>">Pealeht<span class="sr-only">(current)</span></a></li>
+					<li class="all"><a href="<?php echo base_url(); ?>"><?php echo lang("MENU_HOME"); ?><span class="sr-only">(current)</span></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="<?php echo base_url(); ?>users/registration">Registreeru<span class="sr-only">(current)</span></a></li>
-					<li><a href="<?php echo base_url(); ?>users/login">Logi sisse<span class="sr-only">(current)</span></a></li>
+					<li><a href="<?php echo base_url(); ?>users/registration"><?php echo lang("MENU_SIGN_UP"); ?><span class="sr-only">(current)</span></a></li>
+					<li><a href="<?php echo base_url(); ?>users/login"><?php echo lang("MENU_LOG_IN"); ?><span class="sr-only">(current)</span></a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div>

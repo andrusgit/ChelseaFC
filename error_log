@@ -24,3 +24,13 @@
 [25-Mar-2017 23:23:18 Europe/Tallinn] PHP Parse error:  syntax error, unexpected ')' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 13
 [25-Mar-2017 23:23:57 Europe/Tallinn] PHP Fatal error:  Call to a member function result() on array in /webpages/chelseafccsut/public_html/application/views/offers.php on line 14
 [25-Mar-2017 23:24:13 Europe/Tallinn] PHP Fatal error:  Call to a member function result() on array in /webpages/chelseafccsut/public_html/application/views/offers.php on line 14
+[26-Mar-2017 14:59:37 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'headloggedin' (T_STRING), expecting ']' in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 25
+[26-Mar-2017 15:12:09 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 15:12:37 Europe/Tallinn] PHP Fatal error:  Function name must be a string in /webpages/chelseafccsut/public_html/application/views/head.php on line 11
+[26-Mar-2017 15:12:40 Europe/Tallinn] PHP Fatal error:  Function name must be a string in /webpages/chelseafccsut/public_html/application/views/head.php on line 11
+[26-Mar-2017 15:12:41 Europe/Tallinn] PHP Fatal error:  Function name must be a string in /webpages/chelseafccsut/public_html/application/views/head.php on line 11
+[26-Mar-2017 15:25:33 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '}' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 27
+[26-Mar-2017 15:28:51 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '}' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 27
+[26-Mar-2017 15:30:12 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '}' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 27
+[26-Mar-2017 15:32:35 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '}' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 27
+[26-Mar-2017 15:32:41 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '}' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 27

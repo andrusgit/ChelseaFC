@@ -15,6 +15,21 @@ class Offer extends CI_Model{
 	
 	}
 	
+	public function getOffersAmountByUserId($userId){
+		$userId = (int)$userId;
+		
+		$query = $this->db->query("SELECT COUNT(*) as Count FROM view_JobOffersWithUser Where UserId=".$userId);
+		$final = "";
+		
+		foreach ($query->result() as $row)  
+		{
+			$final . $row;
+		}
+		
+		return $query;
+	
+	}
+	
 }
 
 ?>
