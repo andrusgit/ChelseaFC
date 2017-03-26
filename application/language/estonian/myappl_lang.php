@@ -41,6 +41,9 @@ $lang['LOG_IN_FORM_NOT_USER_QUESTION'] = 'Pole veel kasutajat?';
 
 //CONTACT
 $lang['CONTACT_PAGE_TITLE'] = 'Kontakt';
+$lang['CONTACT_PAGE_FEEDBACK_TITLE'] = 'Oleme Teie tagasiside eest väga tänulikud!';
+$lang['CONTACT_PAGE_FEEDBACK_SEND'] = 'Saada';
+$lang['CONTACT_PAGE_FEEDBACK_RESET'] = 'Tühista';
 
 //OFFERS
 $lang['OFFERS_PAGE_TITLE'] = 'Pakkumised';
@@ -51,4 +54,8 @@ $lang['OFFERS_TABLE_LOCATION'] = 'Asukoht';
 $lang['OFFERS_TABLE_PAY'] = 'Tunnitasu';
 $lang['OFFERS_TABLE_BEGIN'] = 'Algus';
 $lang['OFFERS_TABLE_END'] = 'Lõpp';
+
+//HELP
+$lang['MAIN_SEARCH_HELP'] = 'Kui soovid olemasolevaid kuulutusi sirvida';
+$lang['MAIN_ADD_HELP'] = 'Kui soovid uut kuulutust lisada';
 ?>

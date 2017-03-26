@@ -41,6 +41,9 @@ $lang['LOG_IN_FORM_NOT_USER_QUESTION'] = 'Not a user?';
 
 //CONTACT 
 $lang['CONTACT_PAGE_TITLE'] = 'Contact';
+$lang['CONTACT_PAGE_FEEDBACK_TITLE'] = 'We are very grateful for Your feedback!';
+$lang['CONTACT_PAGE_FEEDBACK_SEND'] = 'Send';
+$lang['CONTACT_PAGE_FEEDBACK_RESET'] = 'Reset';
 
 //OFFERS
 $lang['OFFERS_PAGE_TITLE'] = 'Offers';
@@ -51,4 +54,8 @@ $lang['OFFERS_TABLE_LOCATION'] = 'Location';
 $lang['OFFERS_TABLE_PAY'] = 'Payment';
 $lang['OFFERS_TABLE_BEGIN'] = 'Begin date';
 $lang['OFFERS_TABLE_END'] = 'End date';
+
+//HELP
+$lang['MAIN_SEARCH_HELP'] = 'For when you want to search for services';
+$lang['MAIN_ADD_HELP'] = 'For when you want to add an ad for a service';
 ?>
