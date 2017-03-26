@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">  
-<head>
-<link href="<?php echo base_url(); ?>assets/css/style.css" rel='stylesheet' type='text/css' />
-<?php 
-	if(isset($title)){
-		echo "<title>" . $title . "</title>";
-	} else {
-		echo "<title>Tiitel puudub</title>";
-	}
-?>
-</head>
-<body>
+
+
+
+
 <div class="container">
     <h2><?php echo lang("SIGN_UP_FORM_TITLE"); ?></h2>
-    <form action="" method="post">
+    <form method="post">
         <div class="form-group">
             <input type="text" class="form-control" name="name" placeholder="<?php echo lang("SIGN_UP_FORM_NAME"); ?>" required="" value="<?php echo !empty($user['name'])?$user['name']:''; ?>">
           <?php echo form_error('name','<span class="help-block">','</span>'); ?>
@@ -62,5 +53,3 @@
     </form>
     <p class="footInfo"><?php echo lang("SIGN_UP_FORM_IF_USER_QUESTION"); ?> <a href="<?php echo base_url(); ?>users/login"><?php echo lang("MENU_LOG_IN"); ?></a></p>              
 </div>
-</body>
-</html>

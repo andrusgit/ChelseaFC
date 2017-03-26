@@ -50,11 +50,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<ul class="nav navbar-nav">
 					<!-- <li><a href="<?php echo base_url(); ?>" class="navbar-brand"><img class="img" alt="Jooksupoiss_logo" src="<?php echo base_url(); ?>/images/logo1-1.jpg"/></a></li> -->
 					<li><a href="<?php echo base_url(); ?>" class="navbar-brand">Jooksupoiss</a></li>
-					<li class="all"><a href="<?php echo base_url(); ?>">Pealeht<span class="sr-only">(current)</span></a></li>
+					<li class="all"><a href="<?php echo base_url(); ?>"><?php echo lang("MENU_HOME"); ?><span class="sr-only">(current)</span></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="<?php echo base_url(); ?>users/account">Kasutaja<span class="sr-only">(current)</span></a></li>
-					<li><a href="<?php echo base_url(); ?>users/logout">Logi välja<span class="sr-only">(current)</span></a></li>
+					<li><a href="<?php echo base_url(); ?>users/account"><?php echo lang("LOGGED_IN_MENU_USER"); ?><span class="sr-only">(current)</span></a></li>
+					<li><a href="<?php echo base_url(); ?>users/logout"><?php echo lang("LOGGED_IN_MENU_LOG_OUT"); ?><span class="sr-only">(current)</span></a></li>
 					<li><a href="<?php echo base_url(); ?>index.php/welcome/vahetaKeelt/estonian"><img class="img" alt="estonian flag" src="<?php echo base_url(); ?>images/est.png"/></a></li>
 					<li><a href="<?php echo base_url(); ?>index.php/welcome/vahetaKeelt/english"><img class="img" alt="united kingdom flag" src="<?php echo base_url(); ?>images/uk.png"/></a></li>
 				</ul>
