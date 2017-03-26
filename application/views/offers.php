@@ -5,13 +5,13 @@
 					<thead>
 						<tr>
 							<th class="text-center col-lg-1"><b>Id</b></th>  
-							<th class="text-center col-lg-1"><b><?php echo lang("OFFERS_TABLE_TITLE"); ?></b></th>
+							<th class="text-center col-lg-2"><b><?php echo lang("OFFERS_TABLE_TITLE"); ?></b></th>
 							<th class="text-center col-lg-3"><b><?php echo lang("OFFERS_TABLE_DESCRIPTION"); ?></b></th>
 							<th class="text-center col-lg-1"><b><?php echo lang("OFFERS_TABLE_LOCATION"); ?></b></th>
 							<th class="text-center col-lg-1"><b><?php echo lang("OFFERS_TABLE_PAY"); ?> (€/h)</b></th>
 							<th class="text-center col-lg-2"><b><?php echo lang("OFFERS_TABLE_BEGIN"); ?></b></th>	
 							<th class="text-center col-lg-2"><b><?php echo lang("OFFERS_TABLE_END"); ?></b></th>
-							<th class="text-center col-lg-1"><b>Lisas</b></th>
+<!--							<td>Lisas</td>-->
 						</tr>
 					</thead>
 				  <tbody>   
@@ -26,7 +26,7 @@
 						<td class="text-center"><?php echo $row->Hourprice;?></td>  
 						<td class="text-center"><?php echo $row->Start;?></td>  
 						<td class="text-center"><?php echo $row->Enddatetime;?></td>  
-						<td class="text-center"><?php echo $row->Added;?></td> 
+						<!--<td><?php echo $row->name;?></td>-->  
 						</tr>  
 					 <?php }  
 					 ?>  

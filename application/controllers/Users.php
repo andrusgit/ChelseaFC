@@ -13,6 +13,8 @@ class Users extends CI_Controller {
      */
     public function account(){
         $data = array();
+		$title['title'] = lang('ACCOUNT_TITLE');
+		
         if($this->session->userdata('isUserLoggedIn')){
             $data['user'] = $this->user->getRows(array('id'=>$this->session->userdata('userId')));
 			$currentUserId = $data['user']['id'];
@@ -20,7 +22,7 @@ class Users extends CI_Controller {
 			//load the method of model  
 			$data['offers']=$this->Offer->getOffersAmountByUserId($currentUserId); 
 			
-			$this->load->view('headloggedin');
+			$this->load->view('headloggedin', $title);
             $this->load->view('users/account', $data);
 			$this->load->view('footer');
 

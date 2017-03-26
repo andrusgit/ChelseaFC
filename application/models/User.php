@@ -3,12 +3,9 @@ class User extends CI_Model{
     function __construct() {
         $this->userTbl = 'users';
     }
-
     /*
      * get rows from the users table
      */
-	 
-	//Regular login stuff
     function getRows($params = array()){
         $this->db->select('*');
         $this->db->from($this->userTbl);
