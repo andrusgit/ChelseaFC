@@ -22,7 +22,7 @@
                   <td>toomasveromann@gmail.com</td>
                 </tr>
                 <tr>
-                  <td>Ako Tõnissoo</td>
+                  <td>Ako T천nissoo</td>
                   <td>53533329</td>
                   <td>ako.tonissoo@gmail.com</td>
                 </tr>
@@ -32,5 +32,12 @@
             <div id="googleMap" style="height:350px;"></div>
             <script src="/js/googleMap.js"></script>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb38Ul4HJ-GAKgKCWoo492ASn6_A-lRX4&callback=myMap"></script>
+            
+            <form action="feedback.php" method="POST">
+            	            	
+                <br>
+		<h3>Oleme Teie tagasiside eest väga tänulikud!</h3><textarea name="message" rows="6" cols="100"></textarea><br />
+		<input type="submit" value="Send" onclick="showXMLfeedback()"><input type="reset" value="Clear">
+	     </form>
         </div>
         

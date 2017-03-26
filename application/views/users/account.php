@@ -1,5 +1,5 @@
 <div class="container">
-    <h2>Kasutaja konto</h2>
+    <h2>Konto</h2>
     <h3>Tere tulemast <?php echo $user['name']; ?>!</h3>
     <div class="account-info">
         <p><b>Nimi: </b><?php echo $user['name']; ?></p>

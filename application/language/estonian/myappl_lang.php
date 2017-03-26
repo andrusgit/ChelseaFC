@@ -41,4 +41,14 @@ $lang['LOG_IN_FORM_NOT_USER_QUESTION'] = 'Pole veel kasutajat?';
 
 //CONTACT
 $lang['CONTACT_PAGE_TITLE'] = 'Kontakt';
+
+//OFFERS
+$lang['OFFERS_PAGE_TITLE'] = 'Pakkumised';
+$lang['OFFERS_DESCRIPTION'] = 'Siin on praegusel momendil näha kõik pakkumised: nii need kus otsitakse töötegijat kui ka need kus pakutakse enda teenuseid välja.';
+$lang['OFFERS_TABLE_TITLE'] = 'Pealkiri';
+$lang['OFFERS_TABLE_DESCRIPTION'] = 'Kirjeldus';
+$lang['OFFERS_TABLE_LOCATION'] = 'Asukoht';
+$lang['OFFERS_TABLE_PAY'] = 'Tunnitasu';
+$lang['OFFERS_TABLE_BEGIN'] = 'Algus';
+$lang['OFFERS_TABLE_END'] = 'Lõpp';
 ?>

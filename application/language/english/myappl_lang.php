@@ -41,4 +41,14 @@ $lang['LOG_IN_FORM_NOT_USER_QUESTION'] = 'Not a user?';
 
 //CONTACT 
 $lang['CONTACT_PAGE_TITLE'] = 'Contact';
+
+//OFFERS
+$lang['OFFERS_PAGE_TITLE'] = 'Offers';
+$lang['OFFERS_DESCRIPTION'] = 'Here you can see all of the ads that are currently available: those, which are looking for service and ones, which are offering their services.';
+$lang['OFFERS_TABLE_TITLE'] = 'Title';
+$lang['OFFERS_TABLE_DESCRIPTION'] = 'Description';
+$lang['OFFERS_TABLE_LOCATION'] = 'Location';
+$lang['OFFERS_TABLE_PAY'] = 'Payment';
+$lang['OFFERS_TABLE_BEGIN'] = 'Begin date';
+$lang['OFFERS_TABLE_END'] = 'End date';
 ?>

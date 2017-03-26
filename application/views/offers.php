@@ -1,16 +1,16 @@
 			<div class = "container">
-				<h1>Pakkumised</h1>
-				<p>Siin on praegusel momendil näha kõik pakkumised: nii need kus otsitakse töötegijat kui ka need kus pakutakse enda teenuseid välja.</p>
+				<h1><?php echo lang("OFFERS_PAGE_TITLE"); ?></h1>
+				<p><?php echo lang("OFFERS_DESCRIPTION"); ?></p>
 				<table class="table table-hover table-responsive"> 
 					<thead>
 						<tr>
 							<th class="text-center col-lg-1"><b>Id</b></th>  
-							<th class="text-center col-lg-2"><b>Pealkiri</b></th>
-							<th class="text-center col-lg-3"><b>Kirjeldus</b></th>
-							<th class="text-center col-lg-1"><b>Asukoht</b></th>
-							<th class="text-center col-lg-1"><b>Tunnitasu (€/h)</b></th>
-							<th class="text-center col-lg-2"><b>Algus</b></th>	
-							<th class="text-center col-lg-2"><b>Lõpp</b></th>
+							<th class="text-center col-lg-2"><b><?php echo lang("OFFERS_TABLE_TITLE"); ?></b></th>
+							<th class="text-center col-lg-3"><b><?php echo lang("OFFERS_TABLE_DESCRIPTION"); ?></b></th>
+							<th class="text-center col-lg-1"><b><?php echo lang("OFFERS_TABLE_LOCATION"); ?></b></th>
+							<th class="text-center col-lg-1"><b><?php echo lang("OFFERS_TABLE_PAY"); ?> (€/h)</b></th>
+							<th class="text-center col-lg-2"><b><?php echo lang("OFFERS_TABLE_BEGIN"); ?></b></th>	
+							<th class="text-center col-lg-2"><b><?php echo lang("OFFERS_TABLE_END"); ?></b></th>
 <!--							<td>Lisas</td>-->
 						</tr>
 					</thead>
