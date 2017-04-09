@@ -8,25 +8,27 @@ class Offer extends CI_Model{
 		parent::__construct();  
     }
 	
-	public function getOffers(){
+	public function getOffers($start){
+		$this->load->database();
 		
-		$query = $this->db->query("SELECT * FROM view_JobOffersWithUser ORDER BY 'Price per hour' DESC");
-		return $query;
+		$query = $this->db->query("SELECT * FROM view_JobOffersWithUser ORDER BY Id DESC LIMIT " . $start . ", " . (OFFERSPRESENTED + 1));
+		return $query->result_array();
 	
 	}
 	
 	public function getOffersAmountByUserId($userId){
 		$userId = (int)$userId;
 		
-		$query = $this->db->query("SELECT COUNT(*) as Count FROM view_JobOffersWithUser Where UserId=".$userId);
-		$final = "";
+		/*$query = $this->db->query("SELECT COUNT(*) as Count FROM view_JobOffersWithUser Where UserId=".$userId);
+		$data = mysqli_fetch_assoc($query);
+		return $data['Count'];*/
 		
-		foreach ($query->result() as $row)  
-		{
-			$final . $row;
-		}
-		
-		return $query;
+		$con=mysqli_connect("localhost","chelseafccsut_toomastoomas","D,,}?]m_Z[R,","chelseafccsut_Users");
+		$result = mysqli_query($con, "SELECT COUNT(*) as Count FROM view_JobOffersWithUser Where UserId=".$userId);
+		$row = mysqli_fetch_assoc($result);
+		$count = $row['Count'];
+	
+		return $count;
 	
 	}
 	

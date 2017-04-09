@@ -8,7 +8,7 @@
      * Käesolev fail on UTF-8 kodeeringus            *
      *************************************************/
 
-    require_once 'config.php';
+    require_once 'application/views/config.php';
 
     /**
      * Koostame VK_* muutujatest massiivi
@@ -20,30 +20,8 @@
             $macFields[$f] = $v;
         }
     }
-
-    // Kontrollime andmete charset parameetrit juhul kui pank selle saadab
-    $p = $banks[ $preferences['bankname'] ]['charset_parameter'];
-
-    $banklinkCharset = '';
-
-    if ($p != '') {
-        $banklinkCharset = $macFields[$p];
-    }
-
-    if ($banklinkCharset == '') {
-        $banklinkCharset = 'iso-8859-1';
-    }
-
-    /**
-     * Kontrollime väärtusi, mis pangast tulid.
-     * Selleks arvutame nende väärtuste põhjal signatuuri ning
-     * võrdleme seda selle signatuuriga, mis pank koos väärtustega meile saatis.
-     */
-    $key = openssl_pkey_get_public (file_get_contents ($preferences['bank_certificate']));
-
-    if (!openssl_verify (generateMACString ($macFields), base64_decode ($macFields['VK_MAC']), $key)) {
-        trigger_error ("Invalid signature", E_USER_ERROR);
-    }
+    
+    
 
     header ("Content-Type: text/html; charset=utf-8");
 

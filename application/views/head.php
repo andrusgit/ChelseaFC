@@ -24,19 +24,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 		<!-- JavaScript local fallback -->
 		<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="js/bootstrap.min.js"><\/script>')}</script>
-<<<<<<< HEAD
 		<!-- Tooltip initialization -->
-		<script src="js/tooltip_script.js"></script>
-		<script src="js/feedback.js"></script>
+		<!--<script src="js/tooltip_script.js"></script>-->
 		
-=======
->>>>>>> 5bffd9b1a13eeeff9b0c28f83b20290f73985e6b
+		
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
 			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
 			crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" 
-			href="css/bootstrap.min.css">
+		<!--<link rel="stylesheet" type="text/css" 
+			href="css/uusbootstrap.css">-->
+		<script src="<?php echo base_url(); ?>js/loadMore.js"></script>
+		<script src="<?php echo base_url(); ?>js/loadContacts.js"></script>
+		<script type='text/javascript'>var php_OFFERSPRESENTED = <? echo OFFERSPRESENTED ?></script>
+		
+		
+			
 	</head>
 	<body>
 	<!-- Navbar -->

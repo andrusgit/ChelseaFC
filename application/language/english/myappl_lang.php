@@ -41,9 +41,19 @@ $lang['LOG_IN_FORM_NOT_USER_QUESTION'] = 'Not a user?';
 
 //CONTACT 
 $lang['CONTACT_PAGE_TITLE'] = 'Contact';
-$lang['CONTACT_PAGE_FEEDBACK_TITLE'] = 'We are very grateful for Your feedback!';
-$lang['CONTACT_PAGE_FEEDBACK_SEND'] = 'Send';
-$lang['CONTACT_PAGE_FEEDBACK_RESET'] = 'Reset';
+$lang['CONTACT_PAGE_NAME'] = 'Name';
+$lang['CONTACT_PAGE_PHONE'] = 'Phone: ';
+$lang['CONTACT_PAGE_WRTUS'] = 'Or write to our team directly:';
+$lang['CONTACT_PAGE_CNTCTUS'] = 'Reach out to us!';
+$lang['CONTACT_PAGE_ADDRESS'] = 'Address';
+$lang['CONTACT_PAGE_BANK_TITLE'] = 'Do you wish to help us?';
+$lang['CONTACT_PAGE_BANK_DESC'] = 'Your 5€ donation will help us to reach you faster.';
+$lang['CONTACT_PAGE_BANK_NAME1'] = 'Your name:';
+$lang['CONTACT_PAGE_BANK_ACC1'] = 'Your bank account:';
+$lang['CONTACT_PAGE_BANK_FWD'] = 'Continue payment';
+$lang['CONTACT_PAGE_BANK_SCS'] = 'Thank you! You are one kind fellow';
+$lang['CONTACT_PAGE_BANK_FLR'] = 'Something went wrong!';
+$lang['CONTACT_PAGE_BANK_BCK'] = 'Go back';
 
 //OFFERS
 $lang['OFFERS_PAGE_TITLE'] = 'Offers';
@@ -54,6 +64,7 @@ $lang['OFFERS_TABLE_LOCATION'] = 'Location';
 $lang['OFFERS_TABLE_PAY'] = 'Payment';
 $lang['OFFERS_TABLE_BEGIN'] = 'Begin date';
 $lang['OFFERS_TABLE_END'] = 'End date';
+$lang['OFFERS_TABLE_ADDED'] = 'Added by';
 
 //LOGGED IN NAVIGATION
 $lang['LOGGED_IN_MENU_USER'] = 'User';
@@ -71,4 +82,16 @@ $lang['ACCOUNT_ADS'] = 'Amount of ads added';
 //HELP
 $lang['MAIN_SEARCH_HELP'] = 'For when you want to search for services';
 $lang['MAIN_ADD_HELP'] = 'For when you want to add an ad for a service';
+
+
+//FAQ
+$lang['FAQ_PAGE_TITLE'] = 'FAQ';
+$lang['FOOTER_q1'] = 'What is Jooksupoiss?';
+$lang['FOOTER_a1'] = 'Jooksupoiss is a lifestyle.';
+
+//UNAUTH
+$lang['UNAUTH_PAGE_TITLE'] = 'Unauthorized access';
+$lang['UNAUTH_HEAD'] = 'Unauthorized access';
+$lang['UNAUTH_MSG'] = 'Did you mean to log in?';
+
 ?>

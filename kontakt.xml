@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KONTAKT>
+    <AADRESS>
+        <MAJA>28</MAJA>
+	<TÄNAV>Lossi</TÄNAV>
+	<LINN>Tartu</LINN>
+	<RIIK>Eesti</RIIK>
+	<POSTIINDEKS>51003</POSTIINDEKS>
+    </AADRESS>
+    <ETTEVÕTE>
+    	<NIMI>Jooksupoiss OÜ</NIMI>
+    	<TELEFON>5615420</TELEFON>
+    	<EMAIL>vahvad.sellid@jooksupoiss.ee</EMAIL>
+    </ETTEVÕTE>
+    <ISIK>
+        <NIMI>Ako Tõnissoo</NIMI>
+        <TELEFON>53533329</TELEFON>
+        <EMAIL>ako.tonissoo@gmail.com</EMAIL>
+    </ISIK>
+    <ISIK>
+        <NIMI>Toomas Veromann</NIMI>
+        <TELEFON>58228076</TELEFON>
+        <EMAIL>toomasveromann@gmail.com</EMAIL>
+    </ISIK>
+    <ISIK>
+        <NIMI>Andrus Lall</NIMI>
+        <TELEFON>5581148</TELEFON>
+        <EMAIL>andruslall@outlook.com</EMAIL>
+    </ISIK>
+</KONTAKT>

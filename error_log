@@ -34,3 +34,89 @@
 [26-Mar-2017 15:30:12 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '}' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 27
 [26-Mar-2017 15:32:35 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '}' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 27
 [26-Mar-2017 15:32:41 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '}' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 27
+[26-Mar-2017 15:47:28 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 15:49:55 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 15:50:04 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 16:04:04 Europe/Tallinn] PHP Fatal error:  Call to undefined function msql_fetch_assoc() in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 23
+[26-Mar-2017 16:07:27 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 16:07:31 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 16:07:38 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 16:07:52 Europe/Tallinn] PHP Fatal error:  Cannot use object of type CI_DB_mysqli_result as array in /webpages/chelseafccsut/public_html/application/views/users/account.php on line 9
+[26-Mar-2017 16:10:17 Europe/Tallinn] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::fetch_assoc() in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 22
+[26-Mar-2017 16:17:41 Europe/Tallinn] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::fetch_row() in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 26
+[26-Mar-2017 16:24:32 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '"' in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 25
+[26-Mar-2017 16:24:50 Europe/Tallinn] PHP Deprecated:  mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 25
+[26-Mar-2017 16:24:50 Europe/Tallinn] PHP Deprecated:  mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 25
+[26-Mar-2017 16:25:13 Europe/Tallinn] PHP Deprecated:  mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 25
+[26-Mar-2017 16:25:13 Europe/Tallinn] PHP Deprecated:  mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /webpages/chelseafccsut/public_html/application/models/Offer.php on line 25
+[26-Mar-2017 17:57:42 Europe/Tallinn] PHP Fatal error:  Cannot use [] for reading in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 18
+[26-Mar-2017 18:38:15 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '{' in /webpages/chelseafccsut/public_html/application/views/users/login.php on line 34
+[26-Mar-2017 19:48:48 Europe/Tallinn] PHP Fatal error:  Call to a member function getOffers() on null in /webpages/chelseafccsut/public_html/application/controllers/Offers.php on line 15
+[26-Mar-2017 19:48:53 Europe/Tallinn] PHP Fatal error:  Call to a member function getOffers() on null in /webpages/chelseafccsut/public_html/application/controllers/Offers.php on line 15
+[26-Mar-2017 19:49:00 Europe/Tallinn] PHP Fatal error:  Call to a member function getOffers() on null in /webpages/chelseafccsut/public_html/application/controllers/Offers.php on line 15
+[26-Mar-2017 20:24:43 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /webpages/chelseafccsut/public_html/application/controllers/User_authentication.php on line 56
+[04-Apr-2017 15:36:28 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '<' in /webpages/chelseafccsut/public_html/application/views/offers.php on line 41
+[04-Apr-2017 15:38:25 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '<' in /webpages/chelseafccsut/public_html/application/views/offers.php on line 40
+[04-Apr-2017 16:18:19 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '<' in /webpages/chelseafccsut/public_html/application/views/offers.php on line 18
+[04-Apr-2017 16:47:46 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '<' in /webpages/chelseafccsut/public_html/application/views/offers.php on line 18
+[04-Apr-2017 16:48:55 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in /webpages/chelseafccsut/public_html/application/views/offers.php on line 18
+[04-Apr-2017 18:10:19 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /webpages/chelseafccsut/public_html/application/views/offers.php on line 19
+[04-Apr-2017 18:18:01 Europe/Tallinn] PHP Fatal error:  Unsupported operand types in /webpages/chelseafccsut/public_html/application/views/offers.php on line 19
+[04-Apr-2017 18:21:11 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /webpages/chelseafccsut/public_html/application/views/offers.php on line 38
+[04-Apr-2017 18:23:42 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /webpages/chelseafccsut/public_html/application/views/offers.php on line 38
+[04-Apr-2017 18:35:51 Europe/Tallinn] PHP Parse error:  syntax error, unexpected ';' in /webpages/chelseafccsut/public_html/application/views/offers.php on line 19
+[05-Apr-2017 02:33:36 Europe/Tallinn] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /webpages/chelseafccsut/public_html/application/views/offers.php on line 58
+[05-Apr-2017 03:41:15 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '<' in /webpages/chelseafccsut/public_html/application/views/offers.php on line 94
+[05-Apr-2017 03:54:07 Europe/Tallinn] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in /webpages/chelseafccsut/public_html/notify.php on line 11
+[05-Apr-2017 03:54:07 Europe/Tallinn] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /webpages/chelseafccsut/public_html/notify.php on line 11
+[05-Apr-2017 03:54:09 Europe/Tallinn] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in /webpages/chelseafccsut/public_html/notify.php on line 11
+[05-Apr-2017 03:54:09 Europe/Tallinn] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /webpages/chelseafccsut/public_html/notify.php on line 11
+[05-Apr-2017 03:54:55 Europe/Tallinn] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in /webpages/chelseafccsut/public_html/notify.php on line 11
+[05-Apr-2017 03:54:55 Europe/Tallinn] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /webpages/chelseafccsut/public_html/notify.php on line 11
+[05-Apr-2017 03:55:39 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 45
+[05-Apr-2017 04:02:34 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 45
+[05-Apr-2017 04:02:36 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 45
+[05-Apr-2017 04:02:38 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 45
+[05-Apr-2017 04:02:40 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 45
+[05-Apr-2017 04:03:01 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 45
+[05-Apr-2017 04:04:09 Europe/Tallinn] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in /webpages/chelseafccsut/public_html/notify.php on line 11
+[05-Apr-2017 04:04:09 Europe/Tallinn] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /webpages/chelseafccsut/public_html/notify.php on line 11
+[05-Apr-2017 04:04:10 Europe/Tallinn] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in /webpages/chelseafccsut/public_html/notify.php on line 11
+[05-Apr-2017 04:04:10 Europe/Tallinn] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /webpages/chelseafccsut/public_html/notify.php on line 11
+[05-Apr-2017 04:04:57 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 45
+[05-Apr-2017 04:04:59 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 45
+[05-Apr-2017 04:05:07 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 45
+[05-Apr-2017 04:10:04 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 45
+[05-Apr-2017 04:10:05 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 45
+[05-Apr-2017 04:11:26 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 59
+[05-Apr-2017 04:11:27 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 59
+[05-Apr-2017 04:12:51 Europe/Tallinn] PHP Fatal error:  Invalid signature in /webpages/chelseafccsut/public_html/notify.php on line 59
+[06-Apr-2017 22:27:06 Europe/Tallinn] PHP Fatal error:  Call to a member function result() on string in /webpages/chelseafccsut/public_html/application/views/offers.php on line 18
+[06-Apr-2017 22:33:15 Europe/Tallinn] PHP Fatal error:  Call to a member function getOffers() on null in /webpages/chelseafccsut/public_html/application/controllers/Offers.php on line 15
+[06-Apr-2017 23:19:21 Europe/Tallinn] PHP Fatal error:  Call to a member function getOffers() on null in /webpages/chelseafccsut/public_html/application/controllers/Offers.php on line 16
+[06-Apr-2017 23:23:10 Europe/Tallinn] PHP Fatal error:  Call to a member function getOffers() on null in /webpages/chelseafccsut/public_html/application/controllers/Offers.php on line 16
+[06-Apr-2017 23:25:35 Europe/Tallinn] PHP Fatal error:  Call to a member function getOffers() on null in /webpages/chelseafccsut/public_html/application/controllers/Offers.php on line 16
+[06-Apr-2017 23:53:30 Europe/Tallinn] PHP Fatal error:  Call to a member function result() on null in /webpages/chelseafccsut/public_html/application/views/offers.php on line 18
+[06-Apr-2017 23:56:10 Europe/Tallinn] PHP Fatal error:  Call to a member function result() on array in /webpages/chelseafccsut/public_html/application/views/offers.php on line 18
+[07-Apr-2017 00:19:31 Europe/Tallinn] PHP Fatal error:  Call to a member function result() on array in /webpages/chelseafccsut/public_html/application/views/offers.php on line 18
+[07-Apr-2017 00:32:58 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /webpages/chelseafccsut/public_html/application/views/offers.php on line 18
+[08-Apr-2017 13:51:32 Europe/Tallinn] PHP Fatal error:  Call to undefined function getElementById() in /webpages/chelseafccsut/public_html/application/views/contact.php on line 172
+[08-Apr-2017 13:58:47 Europe/Tallinn] PHP Fatal error:  Call to undefined function getElementById() in /webpages/chelseafccsut/public_html/application/views/contact.php on line 172
+[08-Apr-2017 14:04:16 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /webpages/chelseafccsut/public_html/application/views/contact.php on line 173
+[08-Apr-2017 14:38:05 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'rand' (T_STRING), expecting ')' in /webpages/chelseafccsut/public_html/application/views/contact.php on line 80
+[08-Apr-2017 14:38:27 Europe/Tallinn] PHP Parse error:  syntax error, unexpected 'rand' (T_STRING), expecting ')' in /webpages/chelseafccsut/public_html/application/views/contact.php on line 80
+[08-Apr-2017 14:41:06 Europe/Tallinn] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /webpages/chelseafccsut/public_html/application/views/contact.php on line 52
+[08-Apr-2017 14:41:28 Europe/Tallinn] PHP Fatal error:  require_once(): Failed opening required 'controllers/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /webpages/chelseafccsut/public_html/application/views/contact.php on line 52
+[09-Apr-2017 15:17:29 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /webpages/chelseafccsut/public_html/application/controllers/Offers.php on line 5
+[09-Apr-2017 16:49:27 Europe/Tallinn] PHP Fatal error:  Call to undefined method CI_Controller::Controller() in /webpages/chelseafccsut/public_html/application/controllers/Test.php on line 7
+[09-Apr-2017 16:50:04 Europe/Tallinn] PHP Fatal error:  Call to a member function load() on null in /webpages/chelseafccsut/public_html/application/controllers/Test.php on line 8
+[09-Apr-2017 16:50:27 Europe/Tallinn] PHP Fatal error:  Call to a member function library() on null in /webpages/chelseafccsut/public_html/application/controllers/Test.php on line 9
+[09-Apr-2017 16:51:04 Europe/Tallinn] PHP Fatal error:  Call to a member function library() on null in /webpages/chelseafccsut/public_html/application/controllers/Test.php on line 9
+[09-Apr-2017 16:51:05 Europe/Tallinn] PHP Fatal error:  Call to a member function library() on null in /webpages/chelseafccsut/public_html/application/controllers/Test.php on line 9
+[09-Apr-2017 18:02:47 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '<' in /webpages/chelseafccsut/public_html/application/views/offers.php on line 45
+[09-Apr-2017 18:03:26 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '<' in /webpages/chelseafccsut/public_html/application/views/offers.php on line 45
+[09-Apr-2017 18:31:28 Europe/Tallinn] PHP Parse error:  syntax error, unexpected end of file in /webpages/chelseafccsut/public_html/application/views/users/login.php on line 32
+[09-Apr-2017 20:56:15 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '$xml' (T_VARIABLE), expecting ',' or ';' in /webpages/chelseafccsut/public_html/application/views/contact.php on line 9
+[09-Apr-2017 22:28:39 Europe/Tallinn] PHP Parse error:  syntax error, unexpected '<' in /webpages/chelseafccsut/public_html/application/views/user_authentication/index.php on line 3
+[09-Apr-2017 22:35:22 Europe/Tallinn] PHP Fatal error:  Call to a member function is_authenticated() on null in /webpages/chelseafccsut/public_html/application/controllers/Welcome.php on line 30
+[09-Apr-2017 22:40:19 Europe/Tallinn] PHP Parse error:  syntax error, unexpected ')' in /webpages/chelseafccsut/public_html/application/controllers/Users.php on line 20

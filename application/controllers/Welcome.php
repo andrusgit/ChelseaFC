@@ -23,12 +23,18 @@ class Welcome extends CI_Controller {
 		if(!isset($_SESSION)) { 
 			session_start();
 		}
-		
+	
+		$this->session->set_userdata('referred_from', current_url());
+			
 		$title['title'] = lang('MAIN_PAGE_TITLE');
-		
-		//header
-		$this->load->view('head', $title);
-		//main content
+		if($this->session->userdata('isFbUserLoggedIn')){
+			$this->load->view('fbhead', $title);
+		}
+		else if($this->session->userdata('isUserLoggedIn')){
+			$this->load->view('headloggedin', $title);	
+		}else{
+			$this->load->view('head', $title);	
+		}
 		$this->load->view('index');
 		//footer
 		$this->load->view('footer');
@@ -40,53 +46,62 @@ class Welcome extends CI_Controller {
 		if(!isset($_SESSION)) { 
 			session_start();
 		}
-		
+	
+		$this->session->set_userdata('referred_from', current_url());
+			
 		$title['title'] = lang('CONTACT_PAGE_TITLE');
-		
-		$this->load->view('head', $title);	
+		if($this->session->userdata('isFbUserLoggedIn')){
+			$this->load->view('fbhead', $title);
+		}
+		else if($this->session->userdata('isUserLoggedIn')){
+			$this->load->view('headloggedin', $title);	
+		}else{
+			$this->load->view('head', $title);	
+		}
 		$this->load->view('contact');
 		$this->load->view('footer');
 		
 	}
-	
-	public function login() 
+		
+	public function faq() 
 	{
+		
+		//igale funktsioonile
 		if(!isset($_SESSION)) { 
 			session_start();
 		}
-		
-		$title['title'] = lang('LOG_IN_FORM_TITLE');
-		
-		$this->load->view('head', $title);	
-		$this->load->view('login');
+		//igale funktsioonile	
+		$this->session->set_userdata('referred_from', current_url());
+			
+		$title['title'] = lang('FAQ_PAGE_TITLE');
+		if($this->session->userdata('isFbUserLoggedIn')){
+			$this->load->view('fbhead', $title);
+		}
+		else if($this->session->userdata('isUserLoggedIn')){
+			$this->load->view('headloggedin', $title);	
+		}else{
+			$this->load->view('head', $title);	
+		}
+		$this->load->view('faq');
 		$this->load->view('footer');
 		
 	}
 	
-	public function register() 
-	{
-		if(!isset($_SESSION)) { 
-			session_start();
-		}
-		
-		$title['title'] = lang('SIGN_UP_FORM_TITLE');
-		
-		$this->load->view('head', $title);	
-		$this->load->view('registration');
-		$this->load->view('footer');
-		
-	}
 	
 	//Õppejõu järgi
 	function vahetaKeelt($language = "") {
 		if(!isset($_SESSION)) { 
 			session_start();
 		}
+		
+		//$this->session->set_userdata('referred_from', current_url());
+		
 		if($language == "")
 			$language = "estonian";
 		
         $this->session->set_userdata('site_lang', $language);
-		redirect(base_url());
+		$referred_from = $this->session->userdata('referred_from');
+		redirect($referred_from, 'refresh');
     }
 	
 	

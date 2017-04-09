@@ -18,7 +18,7 @@ $lang['FOOTER_CONTACT'] = 'Kontakt';
 
 //MAIN
 $lang['MAIN_SEARCH_BUTTON'] = 'Vaata kuulutusi';
-$lang['MAIN_ADD_BUTTON'] = 'Lisa kuulutusi';
+$lang['MAIN_ADD_BUTTON'] = 'Lisa kuulutus';
 
 //SIGN UP
 $lang['SIGN_UP_FORM_TITLE'] = 'Registreerimine';
@@ -41,9 +41,19 @@ $lang['LOG_IN_FORM_NOT_USER_QUESTION'] = 'Pole veel kasutajat?';
 
 //CONTACT
 $lang['CONTACT_PAGE_TITLE'] = 'Kontakt';
-$lang['CONTACT_PAGE_FEEDBACK_TITLE'] = 'Oleme Teie tagasiside eest väga tänulikud!';
-$lang['CONTACT_PAGE_FEEDBACK_SEND'] = 'Saada';
-$lang['CONTACT_PAGE_FEEDBACK_RESET'] = 'Tühista';
+$lang['CONTACT_PAGE_NAME'] = 'Nimi';
+$lang['CONTACT_PAGE_PHONE'] = 'Telefon: ';
+$lang['CONTACT_PAGE_WRTUS'] = 'Või kirjuta meie meeskonnale:';
+$lang['CONTACT_PAGE_CNTCTUS'] = 'Võta meiega ühendust!';
+$lang['CONTACT_PAGE_ADDRESS'] = 'Aadress';
+$lang['CONTACT_PAGE_BANK_TITLE'] = 'Kas soovid meie ettevõtet aidata?';
+$lang['CONTACT_PAGE_BANK_DESC'] = 'Sinu 5€ annetus muudab meie maailma!';
+$lang['CONTACT_PAGE_BANK_NAME1'] = 'Sinu nimi: ';
+$lang['CONTACT_PAGE_BANK_ACC1'] = 'Sinu pangakonto: ';
+$lang['CONTACT_PAGE_BANK_FWD'] = 'Jätka annetusega';
+$lang['CONTACT_PAGE_BANK_SCS'] = 'Oleme tänulikud! Olgu Teie heldus eeskujuks kõigile!';
+$lang['CONTACT_PAGE_BANK_FLR'] = 'Midagi läks valesti!';
+$lang['CONTACT_PAGE_BANK_BCK'] = 'Suundu tagasi';
 
 //OFFERS
 $lang['OFFERS_PAGE_TITLE'] = 'Pakkumised';
@@ -54,6 +64,7 @@ $lang['OFFERS_TABLE_LOCATION'] = 'Asukoht';
 $lang['OFFERS_TABLE_PAY'] = 'Tunnitasu';
 $lang['OFFERS_TABLE_BEGIN'] = 'Algus';
 $lang['OFFERS_TABLE_END'] = 'Lõpp';
+$lang['OFFERS_TABLE_ADDED'] = 'Lisas';
 
 //LOGGED IN NAVIGATION
 $lang['LOGGED_IN_MENU_USER'] = 'Kasutaja';
@@ -71,4 +82,16 @@ $lang['ACCOUNT_ADS'] = 'Lisatud kuulutusi';
 //HELP
 $lang['MAIN_SEARCH_HELP'] = 'Kui soovid olemasolevaid kuulutusi sirvida';
 $lang['MAIN_ADD_HELP'] = 'Kui soovid uut kuulutust lisada';
+
+//FAQ
+$lang['FAQ_PAGE_TITLE'] = 'KKK';
+$lang['FOOTER_q1'] = 'Mis on Jooksupoiss?';
+$lang['FOOTER_a1'] = 'Jooksupoiss on elustiil.';
+
+//UNAUTH
+$lang['UNAUTH_PAGE_TITLE'] = 'Keelatud ligipääs';
+$lang['UNAUTH_HEAD'] = 'Keelatud ligipääs';
+$lang['UNAUTH_MSG'] = 'Kas te soovisite sisse logida?';
+
+
 ?>

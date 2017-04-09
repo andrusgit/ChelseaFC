@@ -30,6 +30,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" 
 			href="css/bootstrap.min.css">
+		<script src="<?php echo base_url(); ?>js/loadMore.js"></script>
+		<script src="<?php echo base_url(); ?>js/loadContacts.js"></script>
+		<script type='text/javascript'>var php_OFFERSPRESENTED = <? echo OFFERSPRESENTED ?></script>
 	</head>
 	<body>
 	<!-- Navbar -->

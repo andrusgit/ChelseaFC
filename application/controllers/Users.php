@@ -4,7 +4,8 @@ class Users extends CI_Controller {
     
     function __construct() {
         parent::__construct();
-        $this->load->library('form_validation');
+		
+		$this->load->library('form_validation');
         $this->load->model('user');
     }
     
@@ -14,8 +15,8 @@ class Users extends CI_Controller {
     public function account(){
         $data = array();
 		$title['title'] = lang('ACCOUNT_TITLE');
-		
-        if($this->session->userdata('isUserLoggedIn')){
+		$this->session->set_userdata('referred_from', current_url());
+		if($this->session->userdata('isUserLoggedIn')){
             $data['user'] = $this->user->getRows(array('id'=>$this->session->userdata('userId')));
 			$currentUserId = $data['user']['id'];
 			$this->load->model('Offer');  
@@ -27,7 +28,8 @@ class Users extends CI_Controller {
 			$this->load->view('footer');
 
 		}else{
-			$this->load->view('head');
+			$title['title'] = lang('UNAUTH_PAGE_TITLE');
+			$this->load->view('head', $title);
 			$this->load->view('unauth');
 			$this->load->view('footer');
         }
@@ -40,8 +42,9 @@ class Users extends CI_Controller {
 
 		$title['title'] = lang('LOG_IN_FORM_TITLE');
 		
-		if($this->session->userdata('isUserLoggedIn')){
-			redirect('users/account');    
+		if($this->session->userdata('isUserLoggedIn') || $this->session->userdata('isFbUserLoggedIn')){
+			$referred_from = $this->session->userdata('referred_from');
+			redirect($referred_from, 'refresh');  
 		}
 		
         $data = array();
@@ -67,16 +70,19 @@ class Users extends CI_Controller {
                 if($checkLogin){
                     $this->session->set_userdata('isUserLoggedIn',TRUE);
                     $this->session->set_userdata('userId',$checkLogin['id']);
-                    redirect('users/account/');
+                    $referred_from = $this->session->userdata('referred_from');
+					redirect($referred_from, 'refresh');
                 }else{
                     $data['error_msg'] = 'Wrong email or password, please try again.';
                 }
             }
         }
         //load the view
+		
 		$this->load->view('head', $title);
         $this->load->view('users/login', $data);
 		$this->load->view('footer'); 
+
  }
     
     /*
@@ -84,6 +90,10 @@ class Users extends CI_Controller {
      */
     public function registration(){
 	
+		if($this->session->userdata('isUserLoggedIn') || $this->session->userdata('isFbUserLoggedIn')){
+			$referred_from = $this->session->userdata('referred_from');
+			redirect($referred_from, 'refresh');  
+		}
 		$title['title'] = lang('SIGN_UP_FORM_TITLE');
         $data = array();
         $userData = array();
@@ -125,7 +135,8 @@ class Users extends CI_Controller {
         $this->session->unset_userdata('isUserLoggedIn');
         $this->session->unset_userdata('userId');
         $this->session->sess_destroy();
-        redirect('users/login/');
+        $referred_from = $this->session->userdata('referred_from');
+		redirect($referred_from, 'refresh');  
     }
     
     /*
@@ -142,4 +153,5 @@ class Users extends CI_Controller {
             return TRUE;
         }
     }
+	
 }
