@@ -66,6 +66,26 @@ $lang['OFFERS_TABLE_BEGIN'] = 'Begin date';
 $lang['OFFERS_TABLE_END'] = 'End date';
 $lang['OFFERS_TABLE_ADDED'] = 'Added by';
 
+//ADDING OFFERS
+$lang['ADDOFFERS_HEADING'] = 'Add an Ad';
+$lang['ADDOFFERS_FORM_HEADING_LABEL'] = 'Title';
+$lang['ADDOFFERS_FORM_HEADING_HELP'] = 'Here you should type the heading of the ad';
+$lang['ADDOFFERS_FORM_HEADING_PLACEHOLDER'] = 'Enter the title of your ad';
+$lang['ADDOFFERS_FORM_DESCRIPTION_LABEL'] = 'Description';
+$lang['ADDOFFERS_FORM_DESCRIPTION_HELP'] = 'Describe what you are offering in more detail';
+$lang['ADDOFFERS_FORM_DESCRIPTION_PLACEHOLDER'] = 'Describe your what you are offering';
+$lang['ADDOFFERS_FORM_PAY_LABEL'] = 'Payment per hour (€)';
+$lang['ADDOFFERS_FORM_PAY_HELP'] = 'Enter how much are money are you offering per hour in Euros';
+$lang['ADDOFFERS_FORM_PAY_PLACEHOLDER'] = '€';
+$lang['ADDOFFERS_FORM_BEGIN_LABEL'] = 'Beginning date and time';
+$lang['ADDOFFERS_FORM_BEGIN_HELP'] = 'Date and time of the ad\'s beginning';
+$lang['ADDOFFERS_FORM_END_LABEL'] = 'Ending date and time';
+$lang['ADDOFFERS_FORM_END_HELP'] = 'Date and time of the ad\'s ending';
+$lang['ADDOFFERS_FORM_DATE_FORMAT'] = 'DD/MM/YYYY';
+$lang['ADDOFFERS_FORM_LOCATION_LABEL'] = 'Location';
+$lang['ADDOFFERS_FORM_LOCATION_HELP'] = 'The location of the service/work offered';
+$lang['ADDOFFERS_FORM_SUBMIT_BUTTON'] = 'Submit';
+
 //LOGGED IN NAVIGATION
 $lang['LOGGED_IN_MENU_USER'] = 'User';
 $lang['LOGGED_IN_MENU_LOG_OUT'] = 'Log out';
@@ -93,5 +113,10 @@ $lang['FOOTER_a1'] = 'Jooksupoiss is a lifestyle.';
 $lang['UNAUTH_PAGE_TITLE'] = 'Unauthorized access';
 $lang['UNAUTH_HEAD'] = 'Unauthorized access';
 $lang['UNAUTH_MSG'] = 'Did you mean to log in?';
+
+//UNAUTH ADDING OFFERS
+$lang['UNAUTH2_HEAD'] = 'You need to log in to do that';
+$lang['UNAUTH2_MSG'] = 'Please log in';
+
 
 ?>

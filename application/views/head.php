@@ -4,6 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <!DOCTYPE html>
 <html lang="en">
+	<!-- For cacheing offline page in a way that doesn't cache this page -->
+	<iframe src="/offline.html" style="display: none;"></iframe>
+	
 	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,6 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="js/bootstrap.min.js"><\/script>')}</script>
 		<!-- Tooltip initialization -->
 		<!--<script src="js/tooltip_script.js"></script>-->
+		
 		
 		
 

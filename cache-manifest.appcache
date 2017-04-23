@@ -1,0 +1,13 @@
+CACHE MANIFEST
+# 2017-04-23:v14
+
+js/bootstrap.min.js
+css/bootstrap.min.css
+
+# offline.html will be displayed if the user is offline
+FALLBACK:
+/ /offline.html
+
+# All other resources (e.g. sites) require the user to be online.
+NETWORK:
+*

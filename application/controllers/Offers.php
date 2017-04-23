@@ -44,17 +44,28 @@ class Offers extends CI_Controller {
 			session_start();
 		}
 		
-		$title['title'] = lang('OFFERS_PAGE_TITLE');
-		if($this->session->userdata('isFbUserLoggedIn')){
-			$this->load->view('fbhead', $title);
-		}
-		else if($this->session->userdata('isUserLoggedIn')){
-			$this->load->view('headloggedin', $title);	
+		if($this->session->userdata('isUserLoggedIn')  || $this->session->userdata('isFbUserLoggedIn')){
+            //$this->load->view(ANDRUSE_VIEW_KÄIB_SIIA, $vb_data_ka);
+
+			$title['title'] = lang('OFFERS_PAGE_TITLE');
+			if($this->session->userdata('isFbUserLoggedIn')){
+				$this->load->view('fbhead', $title);
+			}
+			else if($this->session->userdata('isUserLoggedIn')){
+				$this->load->view('headloggedin', $title);	
+			}
+			
+			$this->load->view('addoffer');
+			$this->load->view('footer');
+
 		}else{
-			$this->load->view('head', $title);	
-		}
-		$this->load->view('addoffer');
-		$this->load->view('footer');
+			$title['title'] = lang('UNAUTH_PAGE_TITLE');
+			$this->load->view('head', $title);
+			$this->load->view('unauth2');
+			$this->load->view('footer');
+        }
+
+		
 	}
 
 	

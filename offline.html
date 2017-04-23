@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html manifest="cache-manifest.appcache" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>INFO</title>
+	
+	<!-- JavaScript local fallback -->
+	<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="js/bootstrap.min.js"><\/script>')}</script>
+	
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Väikesel ekraanil kaovad navbarilt nupud ära ja tuleb nupp asemele -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+					<!-- Hides information from screen readers -->
+					<span class="sr-only"></span>
+					<!-- Joonistab nupule 3 triipu #aesthetics -->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="nav navbar-nav">
+					<li><a href="http://chelseafc.cs.ut.ee/" class="navbar-brand">Jooksupoiss</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+    </nav>
+	<div class="container text-center">
+		<h1>Vabandust!</h1>
+		<h1>Sorry!</h1>
+		<br>
+		<h3>Kahjuks ei saa Te ilma internetita lehekülge kasutada</h3>
+		<h3>Unfortunately you cannot use the website without internet connection</h3>
+	</div>
+</body>
+</html>

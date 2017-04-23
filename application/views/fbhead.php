@@ -4,6 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <!DOCTYPE html>
 <html lang="en">
+	<!-- For cacheing offline page in a way that doesn't cache this page -->
+	<iframe src="/offline.html" style="display: none;"></iframe>
+	
 	<head><meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
 		 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +29,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="js/bootstrap.min.js"><\/script>')}</script>
 		<!-- Tooltip initialization -->
 		<!--<script src="js/tooltip_script.js"></script>-->
-		
+
+		<!-- Bootstrap Date-Picker Plugin -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+		<!-- Date Picker configuration script-->
+		<script src="<?php echo base_url(); ?>js/pickDates.js"></script>
+		<!-- lokaliseerimiseks -->
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/i18n/jquery-ui-i18n.min.js"></script>-->
+		<!-- <script type="text/javascript" src="js/datepicker-et.js"></script>-->
 
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
