@@ -4,8 +4,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <!DOCTYPE html>
 <html lang="en">
-	<!-- For cacheing offline page in a way that doesn't cache this page -->
-	<iframe src="/offline.html" style="display: none;"></iframe>
 	
 	<head><meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
 		 
@@ -76,3 +74,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div><!-- /.navbar-collapse -->
 		</div>
     </nav>
+	
+	<!-- For cacheing offline page in a way that doesn't cache this page -->
+	<iframe src="/offline.html" style="display: none;"></iframe>
