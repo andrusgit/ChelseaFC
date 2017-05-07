@@ -10,7 +10,7 @@
 	<?php endif; ?>
 		
 	<!--Form-->
-	<!-- Hiljem välja kommenteerida, et andmebaasi saata <?php echo form_open('Welcome/lisaKuulutus');?> -->
+	<?php echo form_open('Offers/add');?>
 	
 	<div class="col-lg-12 well">
 		<div class="row">
@@ -61,19 +61,34 @@
 					<label for="tunnitasu"><?php echo lang("ADDOFFERS_FORM_PAY_LABEL"); ?></label>
 					<a href = "#" data-toggle = "tooltip" data-placement = "right" title = "<?php echo lang("ADDOFFERS_FORM_PAY_HELP"); ?>"><img class="img" alt="#" src="<?php echo base_url(); ?>images/help.png"/></a>
 					
-					<!-- <textarea name="description" id="description" placeholder="Sisesta siia uudise sisu ..." rows="5" 
-					class="form-control"></textarea> -->
-					
 					<?php
-						$data_textarea = array(
-							'name' => 'tunnitasu',
-							'id' => 'tunnitasu',
-							'class' => 'form-control',
-							'placeholder' => lang('ADDOFFERS_FORM_PAY_PLACEHOLDER'),
-							'rows' => '1',
-							'value' => set_value('tunnitasu')
+						$price = array(
+							'3'         => '3',
+							'4'       => '4',
+							'5'         => '5',
+							'6'       => '6',
+							'7'         => '7',
+							'8'       => '8',
+							'9'         => '9',
+							'10'       => '10',
+							'11'         => '11',
+							'12'       => '12',
+							'13'         => '13',
+							'14'       => '14',
+							'15'         => '15',
+							'16'       => '16',
+							'17'        => '17',
+							'18'      => '18',
+							'19'        => '19',
+							'20'		=> '20',
+							'40'		=> '40',
+							'60'		=> '60',
+							'80'		=> '80',
+							'100'		=> '100',
 						);
-						echo form_textarea($data_textarea);						
+						
+						echo form_dropdown('tunnitasu', $price, '7');
+					
 					?>
 					
 				</div>
@@ -94,7 +109,7 @@
 			<br>
 			<div class="row">
 				<div class="form-group form-inline">
-					<label for="algus"><strong><?php echo lang("ADDOFFERS_FORM_END_LABEL"); ?></strong></label>
+					<label for="lõpp"><strong><?php echo lang("ADDOFFERS_FORM_END_LABEL"); ?></strong></label>
 					<a href = "#" data-toggle = "tooltip" data-placement = "right" title = "<?php echo lang("ADDOFFERS_FORM_END_HELP"); ?>"><img class="img" alt="#" src="<?php echo base_url(); ?>images/help.png"/></a>
 					
 					<div class="input-group date" id="enddate">
@@ -108,14 +123,20 @@
 			<br>
 			<div class="row">
 				<div class="form-group form-inline">
-					<label for="tunnitasu"><?php echo lang("ADDOFFERS_FORM_LOCATION_LABEL"); ?></label>
+					<label for="asukoht"><?php echo lang("ADDOFFERS_FORM_LOCATION_LABEL"); ?></label>
 					<a href = "#" data-toggle = "tooltip" data-placement = "right" title = "<?php echo lang("ADDOFFERS_FORM_LOCATION_HELP"); ?>"><img class="img" alt="#" src="<?php echo base_url(); ?>images/help.png"/></a>
 					
-					<select class="form-control">
-					<option value="tartu">Tartu</option>
-					<option value="tallinn">Tallinn</option>
-					<option value="pärnu">Pärnu</option>
-					</select>
+					<?php
+						$locations = array(
+							'Tartu'         => 'Tartu',
+							'Tallinn'           => 'Talllinn',
+							'Pärnu'         => 'Pärnu',
+							'Viljandi'        => 'Viljandi',
+						);
+						
+						echo form_dropdown('asukoht', $locations, 'Tartu');
+					
+					?>
 					
 				</div>
 			</div>

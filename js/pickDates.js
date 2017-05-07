@@ -6,7 +6,7 @@ $(document).ready(function(){
 		//)
 	//);
     var options={
-      format: 'dd/mm/yyyy',
+      format: 'yyyy-mm-dd 12:00:00',
       todayHighlight: true,
       autoclose: true,
 	  startDate: "dateToday"

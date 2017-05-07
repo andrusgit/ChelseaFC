@@ -68,10 +68,10 @@ $lang['OFFERS_TABLE_ADDED'] = 'Lisas';
 
 //ADDING OFFERS
 $lang['ADDOFFERS_HEADING'] = 'Lisa kuulutus';
-$lang['ADDOFFERS_FORM_HEADING_LABEL'] = 'Pealkiri';
+$lang['ADDOFFERS_FORM_HEADING_LABEL'] = 'Pealkiri (max 100)';
 $lang['ADDOFFERS_FORM_HEADING_HELP'] = 'Siia peate kirjutama kuulutuse pealkirja';
 $lang['ADDOFFERS_FORM_HEADING_PLACEHOLDER'] = 'Sisesta oma kuulutuse pealkiri';
-$lang['ADDOFFERS_FORM_DESCRIPTION_LABEL'] = 'Kirjeldus';
+$lang['ADDOFFERS_FORM_DESCRIPTION_LABEL'] = 'Kirjeldus (max 500)';
 $lang['ADDOFFERS_FORM_DESCRIPTION_HELP'] = 'Kirjelda oma pakkumist täpsemalt';
 $lang['ADDOFFERS_FORM_DESCRIPTION_PLACEHOLDER'] = 'Kirjelda pakkumist';
 $lang['ADDOFFERS_FORM_PAY_LABEL'] = 'Tunnitasu (€)';
@@ -81,10 +81,18 @@ $lang['ADDOFFERS_FORM_BEGIN_LABEL'] = 'Pakkumise algus';
 $lang['ADDOFFERS_FORM_BEGIN_HELP'] = 'Pakutava töö või teenuse algus';
 $lang['ADDOFFERS_FORM_END_LABEL'] = 'Pakkumise lõpp';
 $lang['ADDOFFERS_FORM_END_HELP'] = 'Pakutava töö või teenuse lõpp';
-$lang['ADDOFFERS_FORM_DATE_FORMAT'] = 'PÄEV/KUU/AASTA';
+$lang['ADDOFFERS_FORM_DATE_FORMAT'] = 'AASTA/KUU/PÄEV HH:MM:SS';
 $lang['ADDOFFERS_FORM_LOCATION_LABEL'] = 'Asukoht';
 $lang['ADDOFFERS_FORM_LOCATION_HELP'] = 'Pakutava töö või teenuse asukoht';
 $lang['ADDOFFERS_FORM_SUBMIT_BUTTON'] = 'Edasta';
+
+//OFFERS VALIDATION
+$lang['ADDOFFERS_VAL_TITLE'] = 'Pealkiri';
+$lang['ADDOFFERS_VAL_DESCRIPTION'] = 'Kirjeldus';
+$lang['ADDOFFERS_VAL_PAY'] = 'Tunnitasu';
+$lang['ADDOFFERS_VAL_BEGIN'] = 'Algus kuupäev';
+$lang['ADDOFFERS_VAL_END'] = 'Lõpp kuupäev';
+$lang['ADDOFFERS_VAL_LOCATION'] = 'Asukoht';
 
 //LOGGED IN NAVIGATION
 $lang['LOGGED_IN_MENU_USER'] = 'Kasutaja';

@@ -68,10 +68,10 @@ $lang['OFFERS_TABLE_ADDED'] = 'Added by';
 
 //ADDING OFFERS
 $lang['ADDOFFERS_HEADING'] = 'Add an Ad';
-$lang['ADDOFFERS_FORM_HEADING_LABEL'] = 'Title';
+$lang['ADDOFFERS_FORM_HEADING_LABEL'] = 'Title (max 100)';
 $lang['ADDOFFERS_FORM_HEADING_HELP'] = 'Here you should type the heading of the ad';
 $lang['ADDOFFERS_FORM_HEADING_PLACEHOLDER'] = 'Enter the title of your ad';
-$lang['ADDOFFERS_FORM_DESCRIPTION_LABEL'] = 'Description';
+$lang['ADDOFFERS_FORM_DESCRIPTION_LABEL'] = 'Description (max 500)';
 $lang['ADDOFFERS_FORM_DESCRIPTION_HELP'] = 'Describe what you are offering in more detail';
 $lang['ADDOFFERS_FORM_DESCRIPTION_PLACEHOLDER'] = 'Describe your what you are offering';
 $lang['ADDOFFERS_FORM_PAY_LABEL'] = 'Payment per hour (€)';
@@ -81,10 +81,18 @@ $lang['ADDOFFERS_FORM_BEGIN_LABEL'] = 'Beginning date and time';
 $lang['ADDOFFERS_FORM_BEGIN_HELP'] = 'Date and time of the ad\'s beginning';
 $lang['ADDOFFERS_FORM_END_LABEL'] = 'Ending date and time';
 $lang['ADDOFFERS_FORM_END_HELP'] = 'Date and time of the ad\'s ending';
-$lang['ADDOFFERS_FORM_DATE_FORMAT'] = 'DD/MM/YYYY';
+$lang['ADDOFFERS_FORM_DATE_FORMAT'] = 'YYYY/MM/DD HH:MM:SS';
 $lang['ADDOFFERS_FORM_LOCATION_LABEL'] = 'Location';
 $lang['ADDOFFERS_FORM_LOCATION_HELP'] = 'The location of the service/work offered';
 $lang['ADDOFFERS_FORM_SUBMIT_BUTTON'] = 'Submit';
+
+//OFFERS VALIDATION
+$lang['ADDOFFERS_VAL_TITLE'] = 'Title';
+$lang['ADDOFFERS_VAL_DESCRIPTION'] = 'Description';
+$lang['ADDOFFERS_VAL_PAY'] = 'Payment';
+$lang['ADDOFFERS_VAL_BEGIN'] = 'Begin date';
+$lang['ADDOFFERS_VAL_END'] = 'End date';
+$lang['ADDOFFERS_VAL_LOCATION'] = 'Location';
 
 //LOGGED IN NAVIGATION
 $lang['LOGGED_IN_MENU_USER'] = 'User';
